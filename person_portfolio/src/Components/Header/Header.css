@@ -1,0 +1,228 @@
+
+.header{
+  width: 100vw;
+  border-bottom: 1px solid rgb(77, 77, 77);
+  position: fixed;
+  background-color: rgb(37, 37, 37);
+  z-index: 1;
+}
+
+.header_nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_image img{
+  filter: drop-shadow(0 0 0.95rem white);
+  width: 6rem;
+}
+
+.header_icon{
+  margin-right: 1.3rem;
+}
+
+.header_label {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header_label span {
+  position: absolute;
+  height: 1.8px;
+  width: 100%;
+  background: rgb(191, 191, 191);
+  border-radius: 9px;
+  transition: .25s ease-in-out;
+}
+
+.header_label span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.header_label span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.header_label span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.header_lists{
+  position: absolute;
+  border-right: 0.2px solid gray;
+  height: 100vh;
+  width: 68vw;
+  top: 0;
+  left: -100%x;
+  padding-top: 20px;
+  transition: left 1000ms ease-in-out;
+  background-color: rgba(42, 42, 42, 0.8);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header_lists ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  list-style: none;
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+.header_lists .header_list-1 li{
+  padding-top: 2rem;
+  border-bottom: 0.5px solid gray;
+  
+}
+
+.header_lists .header_list-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 0;
+  align-items: center;
+  margin-bottom: 2rem ;
+}
+
+@media only screen and (min-width: 37.5rem){
+  .header_image img{
+    filter: drop-shadow(0 0 0.95rem rgb(188, 188, 188));
+    width: 7.5rem;
+  }
+}
+@media only screen and (min-width: 48rem){
+  .header_image img{ 
+    width: 8rem;
+  }
+
+  .header_icon{
+    display: none;
+  }
+
+  .header_lists{
+    position: relative;
+    height: 0;
+    width: 100%;
+    left: 0 !important;
+    padding-top: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .header_lists ul{
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    
+  }
+
+  .header_lists .header_list-1 li{
+    padding-top: 0;
+    border-bottom: none;
+    position: relative;
+    padding-bottom: 2px;
+  }
+
+  .header_lists .header_list-1 li::after{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  background-color: gray;
+  bottom: 0;
+  left: 50%;
+  transition: all 300ms ease-in-out;
+  }
+
+  .header_lists .header_list-1 li:hover::after{
+    width: 100%;
+    left: 0;
+  }
+
+  .header_lists .header_list-2{
+    padding-left: 3rem;
+  }
+
+  .header_lists .header_list-2 li{
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+  }
+
+  .header_lists .header_list-2 li:hover{
+    transform: scale(1.29);
+    transition: transform 300ms ease-in-out;
+  }
+
+  @media only screen and (min-width: 64rem){
+    .header_image{
+      width: 20%;
+    }
+
+    .header_image img{
+    margin-left: 0.5rem;
+      width: 9rem;
+    }
+
+    .header_lists{
+      width: 80%;
+    }
+
+    .header_list-1{
+      width: 60%;
+    }
+
+    .header_list-2{
+      width: 30%;
+    }
+
+    .header_lists .header_list-1{
+      gap: 3.3rem;
+    }
+  }
+
+  @media only screen and (min-width: 83.5rem){
+    .header{
+      font-size: 1.8rem;
+    }
+
+    .header_image{
+      /* background-color: white; */
+    }
+
+    .header_image img{
+    margin-left: 1.5rem;
+      width: 10rem;
+      /* background: black; */
+    }
+    .header_list-1{
+      width: 60%;
+    }
+
+    .header_list-2{
+      width: 25%;
+    }
+
+    .header_lists .header_list-1{
+      gap: 5rem;
+    }
+
+    .header_lists .header_list-2{
+      gap: 2rem;
+    }
+  }
+
+}
