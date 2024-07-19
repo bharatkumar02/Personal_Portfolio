@@ -3,12 +3,29 @@ import './Home.css';
 import Bharat_img from '../../assets/Bharat_img.png';
 import ProjectDetail from './Home_project/ProjectDetail';
 import styles from './Home_project/ProjectDetail.module.css';
+import { useInView } from 'react-intersection-observer';
 
 function Home() {
+
+  const { ref: section1Ref, inView: section1InView } = useInView({
+    triggerOnce: true,
+    threshold: 0,
+  });
+
+  const { ref: section2Ref, inView: section2InView } = useInView({
+    triggerOnce: true,
+    threshold: 0,
+  });
+  
+  const { ref: section3Ref, inView: section3InView } = useInView({
+    triggerOnce: true,
+    threshold: 0,
+  });
+
   return (
     <>
       <main>
-        <section className="home">
+        <section className={`home ${section1InView ? 'in-view' : ''}`} ref={section1Ref}>
           <img src={Bharat_img} alt="Bharat_Image" loading='lazy'/>
           <div className="home_detail">
             <h1 className="home_heading">Welcome to my portfolio !</h1>
@@ -35,6 +52,7 @@ function Home() {
           linkUsed={'https://laudry-tau.vercel.app/index.html'}
           technology={'Html, Css, and Javascript.'}
           myStyle={styles.projectDetail_div}
+          className={`${styles.projectDetail} ${section2InView ? `${styles.inView}` : ``}`} refer={section2Ref}
         />
 
         <ProjectDetail
@@ -44,6 +62,7 @@ function Home() {
           linkUsed={'https://laudry'}
           technology={'React.js, CSS'}
           myStyle={styles.projectDetail_div_reverse}
+          className={`${styles.projectDetail} ${section3InView ? `${styles.inView}` : ``}`} refer={section3Ref}
         />
       </main>
     </>

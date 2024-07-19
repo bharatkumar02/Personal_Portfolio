@@ -6,11 +6,19 @@ import Skills from './Skills/Skills';
 import Skill from '../../assets/Skills.png';
 import SSITC from '../../assets/SSITC.png';
 import Education from './Education/Education';
+import { useInView } from 'react-intersection-observer';
+
 
 function About() {
+
+  const { ref: section1Ref, inView: section1InView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
     <main>
-      <section className="about">
+      <section className={`about ${section1InView ? 'in-view' : ''}`} ref={section1Ref}>
         <img src={Bharat_img} alt="Bharat_Image" loading='lazy'/>
         <div className="about_detail">
           <h1 className="about_heading">About Me</h1>

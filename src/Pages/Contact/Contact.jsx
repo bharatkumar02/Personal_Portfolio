@@ -5,12 +5,18 @@ import linkedin from '../../assets/linkedin.svg';
 import facebook from '../../assets/facebook.svg';
 import instagram from '../../assets/instagram.svg';
 import PersonalDetail from './Personal_Detail/PersonalDetail';
+import { useInView } from 'react-intersection-observer';
+
 
 function Contact() {
+  const { ref: section1Ref, inView: section1InView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   return (
     <>
       <main className="contact">
-        <section className="contact_div">
+        <section className={`contact_div ${section1InView ? 'in-view' : ''}`} ref={section1Ref}>
           <div className="contact_image">
             <img src={contact2} alt="Contact_Image" loading='lazy'/>
           </div>

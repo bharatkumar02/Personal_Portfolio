@@ -10,11 +10,18 @@ import reactRouter from '../../../assets/reactRouter.svg';
 import redux from '../../../assets/redux.svg';
 import vscode from '../../../assets/vscode.svg';
 import github from '../../../assets/github.svg';
+import { useInView } from 'react-intersection-observer';
+
 
 function Skills() {
+
+  const { ref: section1Ref, inView: section1InView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   return (
     <>
-      <section className="skill">
+      <section className={`skill ${section1InView ? 'in-view' : ''}`} ref={section1Ref}>
         <h1 className="skill_h1">Technical Skills</h1>
         <div className="skill_div">
           <div className="skill_FrontEnd">

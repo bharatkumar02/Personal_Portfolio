@@ -4,6 +4,14 @@
   position: fixed;
   background-color: rgb(37, 37, 37);
   z-index: 1;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.header.in-view{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .header_nav {

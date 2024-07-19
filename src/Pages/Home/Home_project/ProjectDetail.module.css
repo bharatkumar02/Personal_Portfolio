@@ -2,6 +2,14 @@
   margin-top: 15%;
   padding-top: 15%;
   border-top: 1px solid gray;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.projectDetail.inView{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .projectDetail_heading h1 {

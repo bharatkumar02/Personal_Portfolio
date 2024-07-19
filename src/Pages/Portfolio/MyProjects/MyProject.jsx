@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './MyProject.module.css';
+import { useInView } from 'react-intersection-observer';
+
 
 function MyProject({
   projectDetail,
@@ -11,9 +13,14 @@ function MyProject({
   technology,
   gitLink,
 }) {
+  const { ref: section1Ref, inView: section1InView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   return (
+    
     <>
-      <section className={styles.projectDetail}>
+      <section className={`${styles.projectDetail} ${section1InView ? `${styles.inview}` : ``}`} ref={section1Ref}>
         <div className={myStyle}>
           <div className={styles.projectDetail_image}>
             <iframe src={linkUsed} title="Laundry Website" loading='lazy'></iframe>

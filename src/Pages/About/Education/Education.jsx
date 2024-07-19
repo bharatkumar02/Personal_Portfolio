@@ -2,11 +2,18 @@ import React from 'react';
 import education from '../../../assets/Education.png';
 import logo from '../../../assets/igu.png';
 import './Education.css';
+import { useInView } from 'react-intersection-observer';
 
 function Education() {
+
+  const { ref: section1Ref, inView: section1InView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
     <>
-      <section className="education">
+      <section className={`education ${section1InView ? 'in-view' : ''}`} ref={section1Ref}>
         <h1>Education</h1>
         <div className="education_div">
           <div className="education_image">

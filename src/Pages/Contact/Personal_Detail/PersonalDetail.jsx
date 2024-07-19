@@ -3,11 +3,18 @@ import './PersonalDetail.css';
 import email from '../../../assets/email.svg';
 import phone from '../../../assets/phone.svg';
 import location from '../../../assets/location.svg';
+import { useInView } from 'react-intersection-observer';
+
 
 function PersonalDetail() {
+
+  const { ref: section2Ref, inView: section2InView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   return (
     <>
-      <section className="personalDetail">
+      <section className={`personalDetail ${section2InView ? 'in-view' : ''}`} ref={section2Ref}>
         <ul>
           <li>
             <div className="personalDetail_image">

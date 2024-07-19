@@ -3,12 +3,19 @@ import './Portfolio.css';
 import portfolio from '../../assets/portfolio.jpg';
 import MyProject from './MyProjects/MyProject';
 import styles from '../Portfolio/MyProjects/MyProject.module.css';
+import { useInView } from 'react-intersection-observer';
+
 
 function Portfolio() {
+  const { ref: section1Ref, inView: section1InView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
     <>
       <main>
-        <section className="portfolio">
+        <section className={`portfolio ${section1InView ? 'in-view' : ''}`} ref={section1Ref}>
           <img src={portfolio} alt="Project_Image" loading='lazy'/>
           <div className="portfolio_detail">
             <h1 className="portfolio_heading">My Work</h1>

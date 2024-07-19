@@ -5,6 +5,8 @@ import linkedin from '../../assets/linkedin.svg';
 import github from '../../assets/github.svg';
 import instagram from '../../assets/instagram.svg';
 import { Link } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
+
 
 
 function Header() {
@@ -14,8 +16,13 @@ function Header() {
     setStyleHea((pre) => !pre);
   }
 
+  const { ref: section1Ref, inView: section1InView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <header className="header">
+    <header className={`header ${section1InView ? 'in-view' : ''}`} ref={section1Ref}>
       <nav className="header_nav">
         <div className="header_image">
           <Link to='/' smooth={true} duration={200}>

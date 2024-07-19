@@ -8,17 +8,19 @@ function ProjectDetail({
   technology,
   linkUsed,
   myStyle,
+  className,
+  refer,
 }) {
   return (
     <>
-      <section className={styles.projectDetail}>
+      <section className={className} ref={refer}>
         <div className={styles.projectDetail_heading}>
           <h1>{mainHeading}</h1>
         </div>
 
         <div className={myStyle}>
           <div className={styles.projectDetail_image}>
-            <iframe src={linkUsed} title="Laundry Website" loading='lazy'></iframe>
+            <iframe src={linkUsed} title="Laundry Website" loading="lazy"></iframe>
           </div>
 
           <div className={styles.projectDetail_detail}>

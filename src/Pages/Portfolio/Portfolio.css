@@ -8,15 +8,20 @@ main {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.portfolio.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .portfolio img {
   width: 100%;
   filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
- 
 }
-
-
 
 .portfolio_detail {
   display: flex;

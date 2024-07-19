@@ -2,6 +2,8 @@ import React from 'react';
 import Skills from '../../../assets/Skills.png';
 import SSITC from '../../../assets/SSITC.png';
 import './Experience.css';
+import { useInView } from 'react-intersection-observer';
+
 
 function Experience({
   heading,
@@ -16,9 +18,13 @@ function Experience({
   btn,
   altImage,
 }) {
+  const { ref: section1Ref, inView: section1InView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   return (
     <>
-      <section className="experience">
+      <section className={`experience ${section1InView ? 'in-view' : ''}`} ref={section1Ref}>
         <div className="experience_heading">
           <h1>{heading}</h1>
         </div>
