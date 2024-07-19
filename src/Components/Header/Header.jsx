@@ -48,9 +48,9 @@ function Header() {
 
         <div className="header_lists" style={{ left: styleHea ? '0' : '-100%' }}>
           <ul className="header_list-1">
-            <li className="header_list--about"><Link to="/about">About</Link></li>
-            <li className="header_list--portfolio"><Link to="/portfolio">Portfolio</Link></li>
-            <li className="header_list--contact"><Link to="/contact">Contact</Link></li>
+            <li className="header_list--about" onClick={handelClick}><Link to="/about">About</Link></li>
+            <li className="header_list--portfolio" onClick={handelClick}><Link to="/portfolio">Portfolio</Link></li>
+            <li className="header_list--contact" onClick={handelClick}><Link to="/contact">Contact</Link></li>
           </ul>
 
           <ul className="header_list-2">
