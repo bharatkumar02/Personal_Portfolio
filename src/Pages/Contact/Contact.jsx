@@ -12,7 +12,7 @@ function Contact() {
       <main className="contact">
         <section className="contact_div">
           <div className="contact_image">
-            <img src={contact2} alt="Contact_Image" />
+            <img src={contact2} alt="Contact_Image" loading='lazy'/>
           </div>
           <div className="contact_detail">
             <h1>Contact</h1>
@@ -23,13 +23,13 @@ function Contact() {
                   href="https://www.linkedin.com/in/bharat-kumar-4411642b2/"
                   target="_blank"
                 >
-                  <img src={linkedin} alt="Linkedin" />
+                  <img src={linkedin} alt="Linkedin" loading='lazy'/>
                   <p>LinkedIn</p>
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src={facebook} alt="Facebook" />
+                  <img src={facebook} alt="Facebook" loading='lazy'/>
                   <p>Facebook</p>
                 </a>
               </li>
@@ -38,7 +38,7 @@ function Contact() {
                   href="https://www.instagram.com/bhkumar9995/?next=%2F&hl=en"
                   target="_blank"
                 >
-                  <img src={instagram} alt="Instagram" />
+                  <img src={instagram} alt="Instagram" loading='lazy'/>
                   <p>Instagram</p>
                 </a>
               </li>

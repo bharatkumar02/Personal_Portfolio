@@ -9,7 +9,7 @@ function Home() {
     <>
       <main>
         <section className="home">
-          <img src={Bharat_img} alt="Bharat_Image" />
+          <img src={Bharat_img} alt="Bharat_Image" loading='lazy'/>
           <div className="home_detail">
             <h1 className="home_heading">Welcome to my portfolio !</h1>
             <h3 className="home_punchline">

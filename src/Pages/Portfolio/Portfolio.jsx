@@ -9,7 +9,7 @@ function Portfolio() {
     <>
       <main>
         <section className="portfolio">
-          <img src={portfolio} alt="Project_Image" />
+          <img src={portfolio} alt="Project_Image" loading='lazy'/>
           <div className="portfolio_detail">
             <h1 className="portfolio_heading">My Work</h1>
             <h3 className="portfolio_punchline">

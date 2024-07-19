@@ -18,7 +18,7 @@ function Header() {
     <header className="header">
       <nav className="header_nav">
         <div className="header_image">
-          <Link to='/'>
+          <Link to='/' smooth={true} duration={200}>
           <img src={Logo} alt="Logo" />
           </Link>
         </div>
@@ -49,17 +49,17 @@ function Header() {
           <ul className="header_list-2">
             <li>
               <Link to="https://www.linkedin.com/in/bharat-kumar-4411642b2/" target='_blank'>
-                <img src={linkedin} alt="LinkedIn" />
+                <img src={linkedin} alt="LinkedIn" loading='lazy'/>
               </Link>
             </li>
             <li>
               <Link to="https://github.com/bharatkumar02" target='_blank'>
-                <img src={github} alt="Github" />
+                <img src={github} alt="Github" loading='lazy' />
               </Link>
             </li>
             <li>
               <Link to="https://www..instagram.com/bhkumar9995/?next=%2F&hl=en" target='_blank'>
-                <img src={instagram} alt="Instagram" />
+                <img src={instagram} alt="Instagram" loading='lazy' />
               </Link>
             </li>
           </ul>

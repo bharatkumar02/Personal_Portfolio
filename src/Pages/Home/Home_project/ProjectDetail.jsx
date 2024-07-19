@@ -18,7 +18,7 @@ function ProjectDetail({
 
         <div className={myStyle}>
           <div className={styles.projectDetail_image}>
-            <iframe src={linkUsed} title="Laundry Website"></iframe>
+            <iframe src={linkUsed} title="Laundry Website" loading='lazy'></iframe>
           </div>
 
           <div className={styles.projectDetail_detail}>

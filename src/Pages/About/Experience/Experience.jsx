@@ -24,11 +24,11 @@ function Experience({
         </div>
         <div className="experience_div">
           <div className="experience_image">
-            <img src={image} alt="Experience" />
+            <img src={image} alt="Experience" loading='lazy'/>
           </div>
           <div className="experience_detail">
             <div className="company_logo">
-              <img src={logo} alt={altImage} />
+              <img src={logo} alt={altImage} loading='lazy'/>
             </div>
             <div className="experience_parah">
               <p>

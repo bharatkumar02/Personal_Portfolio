@@ -1,16 +1,16 @@
-.projectDetail{
+.projectDetail {
   margin-top: 15%;
   padding-top: 15%;
   border-top: 1px solid gray;
 }
 
-.projectDetail_heading h1{
+.projectDetail_heading h1 {
   font-size: 1.6rem;
   word-spacing: 1.3px;
   text-align: center;
 }
 
-.projectDetail_div{
+.projectDetail_div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +19,7 @@
   margin-top: 2rem;
 }
 
-.projectDetail_div_reverse{
+.projectDetail_div_reverse {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,11 +28,11 @@
   margin-top: 2rem;
 }
 
-.projectDetail_image{
+.projectDetail_image {
   width: 100%;
 }
 
-.projectDetail_image iframe{
+.projectDetail_image iframe {
   width: 100%;
   height: 450px;
   border: none;
@@ -46,7 +46,7 @@
   gap: 2rem;
 }
 
-.projectDetail_detail h3{
+.projectDetail_detail h3 {
   font-size: 1.4rem;
   word-spacing: 2px;
   letter-spacing: 1.3px;
@@ -55,7 +55,7 @@
   text-underline-offset: 3.3px;
 }
 
-.projectDetail_detail p{
+.projectDetail_detail p {
   font-size: 1.2rem;
   line-height: 1.75rem;
   letter-spacing: 0.3px;
@@ -63,14 +63,14 @@
   hyphens: auto;
 }
 
-.projectDetail_detail div{
+.projectDetail_detail div {
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
 }
 
-.projectDetail_detail a{
+.projectDetail_detail a {
   font-size: 1.2rem;
   border: 1px solid rgb(59, 59, 59);
   padding: 10px 15px 10px 15px;
@@ -81,29 +81,28 @@
   transition: all 200ms ease-in-out;
 }
 
-.projectDetail_detail a:link{
+.projectDetail_detail a:link {
   text-decoration: none;
 }
 
-.projectDetail_detail a:visited{
+.projectDetail_detail a:visited {
   color: gray;
 }
 
-.projectDetail_detail a:hover{
+.projectDetail_detail a:hover {
   transform: translateY(-10%);
   transition: all 200ms ease-in-out;
   box-shadow: 5px 5px 3px black;
   border: 1px solid rgb(46, 46, 46);
 }
 
-@media only screen and (min-width: 37.5rem){
-
-  .projectDetail{
+@media only screen and (min-width: 37.5rem) {
+  .projectDetail {
     margin-top: 10%;
     padding-top: 10%;
   }
 
-  .projectDetail_heading h1{
+  .projectDetail_heading h1 {
     font-size: 2rem;
     text-align: center;
     width: 100%;
@@ -112,7 +111,7 @@
     text-shadow: 1px 1.8px 5px rgb(0, 0, 0);
   }
 
-  .projectDetail_detail h3{
+  .projectDetail_detail h3 {
     font-size: 1.4rem;
     letter-spacing: 1.5px;
     line-height: 2rem;
@@ -120,98 +119,97 @@
     text-align: center;
   }
 
-  .projectDetail_detail p{
+  .projectDetail_detail p {
     font-size: 1.3rem;
     line-height: 1.8rem;
     letter-spacing: 0.3px;
     word-spacing: 2px;
   }
 
-  .projectDetail_detail a{
+  .projectDetail_detail a {
     font-size: 1.3rem;
     line-height: 1.8rem;
     letter-spacing: 0.5px;
   }
 }
 
-@media only screen and (min-width: 48rem){
-
-  .projectDetail{
+@media only screen and (min-width: 48rem) {
+  .projectDetail {
     padding-inline: 3%;
   }
 
-  .projectDetail_div{
+  .projectDetail_div {
     flex-direction: row;
   }
-  .projectDetail_div_reverse{
+  .projectDetail_div_reverse {
     flex-direction: row-reverse;
   }
 
-  .projectDetail_image{
-    filter: drop-shadow(0 0 8rem  black);
+  .projectDetail_image {
+    filter: drop-shadow(0 0 8rem black);
     width: 61%;
   }
 
-  .projectDetail_detail{
+  .projectDetail_detail {
     width: 100%;
   }
 }
 
-@media only screen and (min-width: 64rem){
-  .projectDetail{
+@media only screen and (min-width: 64rem) {
+  .projectDetail {
     margin-top: 5%;
     padding-top: 5%;
   }
 
-  .projectDetail_heading h1{
+  .projectDetail_heading h1 {
     font-size: 2.3rem;
   }
 
-  .projectDetail_div{
+  .projectDetail_div {
     gap: 3rem;
   }
 
-  .projectDetail_div_reverse{
+  .projectDetail_div_reverse {
     gap: 3rem;
   }
 }
 
-@media only screen and (min-width: 75rem){
-  .projectDetail{
+@media only screen and (min-width: 75rem) {
+  .projectDetail {
     padding-inline: 5%;
   }
 
-  .projectDetail_div{
+  .projectDetail_div {
     gap: 5rem;
   }
-  .projectDetail_div_reverse{
+  .projectDetail_div_reverse {
     gap: 5rem;
   }
 }
 
-@media only screen and (min-width: 87.5rem){
-  .projectDetail{
+@media only screen and (min-width: 87.5rem) {
+  .projectDetail {
     padding-inline: 10%;
   }
 
-  .projectDetail_heading h1{
+  .projectDetail_heading h1 {
     font-size: 2.9rem;
     margin-bottom: 4rem;
   }
 
-  .projectDetail_detail h3{
+  .projectDetail_detail h3 {
     font-size: 1.9rem;
   }
 
-  .projectDetail_detail p{
+  .projectDetail_detail p {
     font-size: 1.6rem;
     line-height: 2.1rem;
   }
 }
 
-@media only screen and (min-width: 106.25rem){
-  .projectDetail_detail p{
+@media only screen and (min-width: 106.25rem) {
+  .projectDetail_detail p {
     font-size: 1.7rem;
     line-height: 2.5rem;
-  } 
+  }
 }

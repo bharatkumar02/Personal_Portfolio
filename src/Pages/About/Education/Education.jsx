@@ -10,12 +10,12 @@ function Education() {
         <h1>Education</h1>
         <div className="education_div">
           <div className="education_image">
-            <img src={education} alt="My Education" />
+            <img src={education} alt="My Education" loading='lazy'/>
           </div>
 
           <div className="education_detail">
             <div className="logo">
-              <img src={logo} alt="IGU_logo" />
+              <img src={logo} alt="IGU_logo" loading='lazy'/>
             </div>
             <ul>
               <li>

@@ -59,11 +59,11 @@ function Skills() {
             <h3>Tools & Platform</h3>
             <div className="skill_tools_image">
               <div className="skill_image">
-                <img src={vscode} alt="vscode" />
+                <img src={vscode} alt="vscode" loading='lazy'/>
                 <p>VSCode</p>
               </div>
               <div className="skill_image">
-                <img src={github} alt="github" />
+                <img src={github} alt="github" loading='lazy'/>
                 <p>GitHub</p>
               </div>
             </div>

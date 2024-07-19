@@ -11,7 +11,7 @@ function About() {
   return (
     <main>
       <section className="about">
-        <img src={Bharat_img} alt="Bharat_Image" />
+        <img src={Bharat_img} alt="Bharat_Image" loading='lazy'/>
         <div className="about_detail">
           <h1 className="about_heading">About Me</h1>
           <h3 className="about_punchline">
