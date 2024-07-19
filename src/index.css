@@ -1,18 +1,18 @@
 *,
 *::after,
-*::before{
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-size: 1.6rem;
   background-color: rgb(37, 37, 37);
   color: gray;
 }
 
-::selection{
+::selection {
   background: rgb(188, 188, 188);
   color: rgb(42, 41, 41);
 }

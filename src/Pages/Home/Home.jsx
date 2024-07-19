@@ -31,12 +31,7 @@ function Home() {
         <ProjectDetail
           mainHeading={'Current Project'}
           projectName={'Laundry Service'}
-          projectDetail={`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, animi totam
-              aliquid deleniti distinctio tempora ipsa mollitia incidunt placeat iste
-              earum voluptates architecto voluptate officiis enim iure quam, aspernatur
-              voluptatum. Praesentium, labore ipsum harum neque voluptatum cupiditate rem
-              dolor ullam blanditiis delectus voluptates ipsa aspernatur repudiandae alias
-              eveniet placeat consectetur?`}
+          projectDetail={`Introducing a sleek and user-friendly laundry service website designed from scratch with HTML and Tailwind CSS. This project showcases my ability to create elegant, responsive web interfaces that enhance user experience and streamline service accessibility. Explore how I integrated intuitive design with efficient functionality to redefine the online laundry experience.`}
           linkUsed={'https://laudry-tau.vercel.app/index.html'}
           technology={'Html, Css, and Javascript.'}
           myStyle={styles.projectDetail_div}
@@ -44,15 +39,10 @@ function Home() {
 
         <ProjectDetail
           mainHeading={'Ongoing Project'}
-          projectName={'Laundry Service'}
-          projectDetail={`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, animi totam
-          aliquid deleniti distinctio tempora ipsa mollitia incidunt placeat iste
-          earum voluptates architecto voluptate officiis enim iure quam, aspernatur
-          voluptatum. Praesentium, labore ipsum harum neque voluptatum cupiditate rem
-          dolor ullam blanditiis delectus voluptates ipsa aspernatur repudiandae alias
-          eveniet placeat consectetur?`}
-          linkUsed={'https://laudry-tau.vercel.app/index.html'}
-          technology={'Html, Css, and Javascript.'}
+          projectName={'Tic-Tac_Toe'}
+          projectDetail={`In progress: Crafting a responsive Tic Tac Toe game with React.js and CSS. This project showcases my skills in front-end development, focusing on creating an interactive and user-friendly gaming experience. Stay tuned as I refine the gameplay mechanics and design to deliver a seamless and enjoyable gaming interface.`}
+          linkUsed={'https://laudry'}
+          technology={'React.js, CSS'}
           myStyle={styles.projectDetail_div_reverse}
         />
       </main>

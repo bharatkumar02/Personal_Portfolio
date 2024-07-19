@@ -1,16 +1,16 @@
-.skill{
+.skill {
   margin-top: 15%;
   padding-top: 15%;
   border-top: 1px solid gray;
 }
 
-.skill_h1{
+.skill_h1 {
   font-size: 1.6rem;
   word-spacing: 1.3px;
   text-align: center;
 }
 
-.skill_div{
+.skill_div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +19,8 @@
   margin-top: 2rem;
 }
 
-.skill_FrontEnd , .skill_tools{
+.skill_FrontEnd,
+.skill_tools {
   border: 1px solid rgb(69, 69, 69);
   border-radius: 1rem;
   padding-top: 1.8rem;
@@ -27,7 +28,8 @@
   width: 100%;
 }
 
-.skill_FrontEnd h3 , .skill_tools h3{
+.skill_FrontEnd h3,
+.skill_tools h3 {
   font-size: 1.4rem;
   word-spacing: 2px;
   letter-spacing: 1.3px;
@@ -37,7 +39,8 @@
   text-align: center;
 }
 
-.skill_FrontEnd_image , .skill_tools_image{
+.skill_FrontEnd_image,
+.skill_tools_image {
   display: flex;
   justify-content: center;
   align-items: start;
@@ -47,7 +50,7 @@
   text-align: center;
 }
 
-.skill_image{
+.skill_image {
   width: 20%;
   display: flex;
   flex-direction: column;
@@ -56,138 +59,135 @@
   gap: 0.3rem;
 }
 
-.skill_image img{
+.skill_image img {
   width: 100%;
   height: 5rem;
 }
 
-.skill_image p{
+.skill_image p {
   font-size: 1.2rem;
   letter-spacing: 0.3px;
   word-spacing: 2px;
 }
 
-@media only screen and (min-width: 37.5rem){
-  .skill{
+@media only screen and (min-width: 37.5rem) {
+  .skill {
     margin-top: 10%;
     padding-top: 10%;
   }
 
-  .skill_h1{
+  .skill_h1 {
     font-size: 2rem;
     word-spacing: 2px;
     letter-spacing: 1.3px;
     text-shadow: 1px 1.8px 5px rgb(0, 0, 0);
   }
 
-  .skill_div{
+  .skill_div {
     margin-top: 3rem;
-    /* flex-direction: row; */
   }
 
-  .skill_FrontEnd h3 , .skill_tools h3{
+  .skill_FrontEnd h3,
+  .skill_tools h3 {
     font-size: 1.4rem;
     letter-spacing: 1.5px;
     text-underline-offset: 4.1px;
     text-align: center;
   }
 
-  .skill_FrontEnd , .skill_tools{
+  .skill_FrontEnd,
+  .skill_tools {
     padding-top: 2.8rem;
   }
 
-  .skill_image{
+  .skill_image {
     width: 15%;
     gap: 0.5rem;
-    /* flex-direction: row; */
   }
 
-  .skill_image p{
+  .skill_image p {
     font-size: 1.3rem;
     letter-spacing: 0.3px;
     word-spacing: 2px;
   }
 }
 
-@media only screen and (min-width: 48rem){
-  .skill{
+@media only screen and (min-width: 48rem) {
+  .skill {
     padding-inline: 3%;
   }
 
-  .skill_div{
+  .skill_div {
     flex-direction: row;
     align-items: start;
     margin-top: 10%;
   }
 
-  .skill_image img{
-    filter: drop-shadow(0 0 8rem  black);
+  .skill_image img {
+    filter: drop-shadow(0 0 8rem black);
   }
 
-
-  .skill_FrontEnd{
+  .skill_FrontEnd {
     width: 60%;
-    /* border: none; */
   }
 
-  .skill_tools{
+  .skill_tools {
     width: 40%;
-    /* border: none; */
-
   }
 
-  .skill_tools .skill_image{
+  .skill_tools .skill_image {
     width: 23%;
-  } 
+  }
 }
 
-@media only screen and (min-width: 64rem){
-  .skill{
+@media only screen and (min-width: 64rem) {
+  .skill {
     margin-top: 5%;
     padding-top: 5%;
   }
 
-  .skill_div{
+  .skill_div {
     margin-top: 5%;
     gap: 3rem;
   }
 
-  .skill_h1{
+  .skill_h1 {
     font-size: 2.3rem;
   }
 }
 
-@media only screen and (min-width: 75rem){
-  .skill{
+@media only screen and (min-width: 75rem) {
+  .skill {
     padding-inline: 5%;
   }
 
-  .skill_div{
+  .skill_div {
     gap: 5rem;
   }
 }
 
-@media only screen and (min-width: 87.5rem){
-  .skill{
+@media only screen and (min-width: 87.5rem) {
+  .skill {
     padding-inline: 10%;
   }
 
-  .skill_h1{
+  .skill_h1 {
     font-size: 2.9rem;
   }
 
-  .skill_FrontEnd h3 , .skill_tools h3{
+  .skill_FrontEnd h3,
+  .skill_tools h3 {
     font-size: 1.9rem;
   }
 
-  .skill_image p{
+  .skill_image p {
     font-size: 1.6rem;
     line-height: 2.1rem;
   }
 }
 
-@media only screen and (min-width: 106.25rem){
-  .skill_image p{
+@media only screen and (min-width: 106.25rem) {
+  .skill_image p {
     font-size: 1.7rem;
     line-height: 2.5rem;
   }

@@ -1,10 +1,10 @@
-.personalDetail{
+.personalDetail {
   margin-top: 15%;
   padding-top: 15%;
   border-top: 1px solid gray;
 }
 
-.personalDetail ul{
+.personalDetail ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +22,7 @@
   position: relative;
 }
 
-.personalDetail ul li .personalDetail_image{
+.personalDetail ul li .personalDetail_image {
   width: 13%;
   background-color: rgb(37, 37, 37);
   position: absolute;
@@ -30,12 +30,12 @@
   left: 3rem;
 }
 
-.personalDetail ul li .personalDetail_image img{
+.personalDetail ul li .personalDetail_image img {
   width: 100%;
   filter: invert(30%);
 }
 
-.personalDetail_detail{
+.personalDetail_detail {
   border: 1px solid rgb(69, 69, 69);
   border-radius: 1rem;
   width: 90%;
@@ -47,7 +47,7 @@
   gap: 1rem;
 }
 
-.personalDetail_detail h3{
+.personalDetail_detail h3 {
   font-size: 1.4rem;
   word-spacing: 2px;
   letter-spacing: 1.3px;
@@ -56,34 +56,27 @@
   text-underline-offset: 3.3px;
 }
 
-.personalDetail_detail p{
+.personalDetail_detail p {
   font-size: 1.2rem;
   line-height: 1.75rem;
   letter-spacing: 0.3px;
   word-spacing: 2px;
 }
 
-@media only screen and (min-width: 26.56rem){
-  .personalDetail ul li .personalDetail_image{
+@media only screen and (min-width: 26.56rem) {
+  .personalDetail ul li .personalDetail_image {
     width: 12%;
-    /* background-color: rgb(37, 37, 37); */
-    /* position: absolute; */
+
     top: -1.5rem;
-    /* left: 3rem; */
   }
 }
 
-@media only screen and (min-width: 37.5rem){
-
-  .personalDetail ul li .personalDetail_image{
+@media only screen and (min-width: 37.5rem) {
+  .personalDetail ul li .personalDetail_image {
     width: 10%;
-    /* background-color: rgb(37, 37, 37); */
-    /* position: absolute; */
-    /* top: -2rem; */
-    /* left: 3rem; */
   }
 
-  .personalDetail_detail h3{
+  .personalDetail_detail h3 {
     font-size: 1.4rem;
     letter-spacing: 1.5px;
     line-height: 2rem;
@@ -91,7 +84,7 @@
     text-align: center;
   }
 
-  .personalDetail_detail p{
+  .personalDetail_detail p {
     font-size: 1.3rem;
     line-height: 1.8rem;
     letter-spacing: 0.3px;
@@ -99,47 +92,69 @@
   }
 }
 
-@media only screen and (min-width: 48rem){
+@media only screen and (min-width: 48rem) {
+  .personalDetail {
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-inline: 3%;
+  }
 
-  .personalDetail ul{
+  .personalDetail ul {
     flex-direction: row;
     gap: 0.2rem;
   }
 
-  /* .personalDetail ul li{
-    width: 50%;
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
-  } */
-
-  .personalDetail ul li .personalDetail_image{
-    width: 7%;
-    /* background-color: rgb(37, 37, 37); */
-    /* position: absolute; */
-    /* top: -2rem; */
-    left: 4rem;
+  .personalDetail ul li .personalDetail_image {
+    width: 23%;
+    position: relative;
+    left: 0;
+    top: 0;
   }
 
-  .personalDetail_detail{
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .personalDetail ul li .personalDetail_image img {
+    height: 3.5rem;
+  }
+
+  .personalDetail_detail {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     width: fit-content;
   }
 }
 
-@media only screen and (min-width: 87.5rem){
-  .personalDetail_detail h3{
+@media only screen and (min-width: 64rem) {
+  .personalDetail ul {
+    gap: 3rem;
+  }
+
+  .personalDetail_detail {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 75rem) {
+  .personalDetail {
+    padding-inline: 5%;
+  }
+}
+
+@media only screen and (min-width: 87.5rem) {
+  .personalDetail {
+    padding-inline: 10%;
+  }
+
+  .personalDetail_detail h3 {
     font-size: 1.9rem;
   }
 
-  .personalDetail_detail p{
+  .personalDetail_detail p {
     font-size: 1.6rem;
     line-height: 2.1rem;
   }
 }
 
-@media only screen and (min-width: 106.25rem){
-  .personalDetail_detail p{
+@media only screen and (min-width: 106.25rem) {
+  .personalDetail_detail p {
     font-size: 1.7rem;
     line-height: 2.5rem;
   }

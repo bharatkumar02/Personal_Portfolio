@@ -1,26 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import Logo from '../../assets/Logo.png';
 import './Header.css';
+import linkedin from '../../assets/linkedin.svg';
+import github from '../../assets/github.svg';
+import instagram from '../../assets/instagram.svg';
+import { Link } from 'react-router-dom';
+
 
 function Header() {
   const [styleHea, setStyleHea] = useState(false);
 
   function handelClick() {
     setStyleHea((pre) => !pre);
-    // console.log(styleHea);
   }
-
-  // useEffect(() => {
-  //   console.log('styleHea changed:', styleHea);
-  // }, [styleHea]);
-
-  // console.log(styleHea);
 
   return (
     <header className="header">
       <nav className="header_nav">
         <div className="header_image">
+          <Link to='/'>
           <img src={Logo} alt="Logo" />
+          </Link>
         </div>
 
         <div className="header_icon" onClick={handelClick}>
@@ -41,15 +41,27 @@ function Header() {
 
         <div className="header_lists" style={{ left: styleHea ? '0' : '-100%' }}>
           <ul className="header_list-1">
-            <li className="header_list--about">About</li>
-            <li className="header_list--portfolio">Portfolio</li>
-            <li className="header_list--contact">Contact</li>
+            <li className="header_list--about"><Link to="/about">About</Link></li>
+            <li className="header_list--portfolio"><Link to="/portfolio">Portfolio</Link></li>
+            <li className="header_list--contact"><Link to="/contact">Contact</Link></li>
           </ul>
 
           <ul className="header_list-2">
-            <li className="header_list--facebook">Img</li>
-            <li className="header_list--linkedin">Img</li>
-            <li className="header_list--insta">Img</li>
+            <li>
+              <Link to="https://www.linkedin.com/in/bharat-kumar-4411642b2/" target='_blank'>
+                <img src={linkedin} alt="LinkedIn" />
+              </Link>
+            </li>
+            <li>
+              <Link to="https://github.com/bharatkumar02" target='_blank'>
+                <img src={github} alt="Github" />
+              </Link>
+            </li>
+            <li>
+              <Link to="https://www..instagram.com/bhkumar9995/?next=%2F&hl=en" target='_blank'>
+                <img src={instagram} alt="Instagram" />
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

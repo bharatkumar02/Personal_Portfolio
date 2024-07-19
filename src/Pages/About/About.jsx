@@ -5,7 +5,7 @@ import Experience from './Experience/Experience';
 import Skills from './Skills/Skills';
 import Skill from '../../assets/Skills.png';
 import SSITC from '../../assets/SSITC.png';
-import Education from './Education/Education'
+import Education from './Education/Education';
 
 function About() {
   return (
@@ -31,7 +31,7 @@ function About() {
         logo={SSITC}
         para1={'Front-end Developer Intern'}
         para2={'SSITC Solution Pvt. Ltd.'}
-        para3={'February 1, 2023 - July 31, 2023'}
+        para3={'February 1, 2024 - OnGoing'}
         list1="&#10148; Developed responsive web applications using HTML, CSS, Tailwind CSS, React.js, and JavaScript."
         list2="&#10148; Improved page load times by 30% and enhanced user engagement by
                   20%."
@@ -41,8 +41,7 @@ function About() {
         altImage={'SSITC'}
       />
       <Skills />
-      <Education
-      />
+      <Education />
     </main>
   );
 }

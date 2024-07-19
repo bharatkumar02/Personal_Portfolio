@@ -1,16 +1,16 @@
-.experience{
+.experience {
   margin-top: 15%;
   padding-top: 15%;
   border-top: 1px solid gray;
 }
 
-.experience_heading h1{
+.experience_heading h1 {
   font-size: 1.6rem;
   word-spacing: 1.3px;
   text-align: center;
 }
 
-.experience_div{
+.experience_div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,18 +18,18 @@
   margin-top: 15%;
 }
 
-.experience_image{
+.experience_image {
   width: 100%;
   display: none;
 }
 
-.experience_image img{
+.experience_image img {
   width: 100%;
   height: 450px;
   border: none;
 }
 
-.experience_detail{
+.experience_detail {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,7 +42,7 @@
   padding-top: 1.8rem;
 }
 
-.company_logo{
+.company_logo {
   width: 30%;
   position: absolute;
   top: -2.9%;
@@ -51,16 +51,17 @@
   padding: 0 1rem 0 1rem;
 }
 
-.company_logo img{
+.company_logo img {
   width: 100%;
 }
 
-.experience_parah p{
+.experience_parah p {
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
 
-.experience_parah , .experience_list ul{
+.experience_parah,
+.experience_list ul {
   font-size: 1.2rem;
   line-height: 1.75rem;
   letter-spacing: 0.3px;
@@ -71,16 +72,15 @@
   gap: 0.5rem;
 }
 
-
-.experience_list ul li{
+.experience_list ul li {
   list-style: none;
 }
 
-.experience_list ul{
+.experience_list ul {
   gap: 1.5rem;
 }
 
-.experience_button button{
+.experience_button button {
   font-size: 1.2rem;
   border: 1px solid rgb(59, 59, 59);
   padding: 10px 15px 10px 15px;
@@ -92,164 +92,160 @@
   color: gray;
 }
 
-.experience_button button:hover{
+.experience_button button:hover {
   transform: translateY(-10%);
   transition: all 200ms ease-in-out;
   box-shadow: 5px 5px 3px black;
   border: 1px solid rgb(46, 46, 46);
 }
 
-@media only screen and (min-width: 23.43rem){
-  .company_logo{
+@media only screen and (min-width: 23.43rem) {
+  .company_logo {
     top: -3.5%;
   }
 }
 
-@media only screen and (min-width: 26.6rem){
-  .company_logo{
+@media only screen and (min-width: 26.6rem) {
+  .company_logo {
     top: -4%;
     width: 28%;
   }
 }
 
-@media only screen and (min-width: 31.2rem){
-  .company_logo{
+@media only screen and (min-width: 31.2rem) {
+  .company_logo {
     top: -4.5%;
     width: 25%;
   }
 }
 
-@media only screen and (min-width: 36rem){
-  .company_logo{
+@media only screen and (min-width: 36rem) {
+  .company_logo {
     top: -6%;
   }
 }
 
-
-
-@media only screen and (min-width: 37.5rem){
-  .experience{
+@media only screen and (min-width: 37.5rem) {
+  .experience {
     margin-top: 10%;
     padding-top: 10%;
   }
 
-  .experience_heading h1{
+  .experience_heading h1 {
     font-size: 2rem;
     word-spacing: 2px;
     letter-spacing: 1.3px;
     text-shadow: 1px 1.8px 5px rgb(0, 0, 0);
   }
 
-  .experience_div{
+  .experience_div {
     margin-top: 10%;
   }
 
-  .experience_detail{
+  .experience_detail {
     padding-top: 2.8rem;
   }
 
-  .company_logo{
+  .company_logo {
     top: -4.3%;
     width: 20%;
   }
 
-  .experience_parah , .experience_list ul{
+  .experience_parah,
+  .experience_list ul {
     font-size: 1.3rem;
     line-height: 1.8rem;
     letter-spacing: 0.3px;
     word-spacing: 2px;
   }
 
-  .experience_button button{
+  .experience_button button {
     font-size: 1.3rem;
     letter-spacing: 0.5px;
   }
 }
 
-@media only screen and (min-width: 43.75rem){
-  .company_logo{
+@media only screen and (min-width: 43.75rem) {
+  .company_logo {
     width: 19%;
     top: -5%;
   }
 }
 
-@media only screen and (min-width: 48rem){
-  .experience{
+@media only screen and (min-width: 48rem) {
+  .experience {
     padding-inline: 3%;
-    
   }
-  
 
-.experience_image{
-  display: block;
-}
-  .company_logo{
+  .experience_image {
+    display: block;
+  }
+  .company_logo {
     width: 27%;
     top: -1.2rem;
   }
 
-  .experience_image img{
-    filter: drop-shadow(0 0 8rem  black);
+  .experience_image img {
+    filter: drop-shadow(0 0 8rem black);
   }
 }
 
-@media only screen and (min-width: 64rem){
-  .experience{
+@media only screen and (min-width: 64rem) {
+  .experience {
     margin-top: 5%;
     padding-top: 5%;
   }
 
-  .experience_heading h1{
+  .experience_heading h1 {
     font-size: 2.3rem;
   }
 
-  .experience_div{
+  .experience_div {
     gap: 3rem;
     margin-top: 7%;
   }
 
-  .experience_image{
+  .experience_image {
     width: 70%;
   }
 
-  .company_logo{
+  .company_logo {
     width: 20%;
     top: -3.5%;
-
   }
 }
 
-@media only screen and (min-width: 75rem){
-  
-  .experience{
+@media only screen and (min-width: 75rem) {
+  .experience {
     padding-inline: 5%;
   }
 
-  .experience_div{
+  .experience_div {
     gap: 5rem;
     margin-top: 5%;
   }
 }
 
-@media only screen and (min-width: 87.5rem){
-  .experience{
+@media only screen and (min-width: 87.5rem) {
+  .experience {
     padding-inline: 10%;
   }
 
-  .experience_heading h1{
+  .experience_heading h1 {
     font-size: 2.9rem;
   }
 
-  .experience_parah , .experience_list ul{
+  .experience_parah,
+  .experience_list ul {
     font-size: 1.6rem;
     line-height: 2.1rem;
   }
 }
 
-@media only screen and (min-width: 106.25rem){
-  .experience_parah , .experience_list ul{
+@media only screen and (min-width: 106.25rem) {
+  .experience_parah,
+  .experience_list ul {
     font-size: 1.7rem;
     line-height: 2.5rem;
-  } 
+  }
 }
-

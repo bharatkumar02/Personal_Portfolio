@@ -83,6 +83,11 @@
   cursor: pointer;
 }
 
+.header_lists ul li a{
+  color: gray;
+  text-decoration: none;
+}
+
 .header_lists .header_list-1 li{
   padding-top: 2rem;
   border-bottom: 0.5px solid gray;
@@ -98,11 +103,24 @@
   margin-bottom: 2rem ;
 }
 
+.header_list-2 li{
+  width: 17%;
+}
+
+.header_list-2 li img{
+  width: 100%;
+}
+
 @media only screen and (min-width: 37.5rem){
   .header_image img{
     filter: drop-shadow(0 0 0.95rem rgb(188, 188, 188));
     width: 7.5rem;
   }
+
+  .header_list-2 li{
+    width: 12%;
+  }
+  
 }
 @media only screen and (min-width: 48rem){
   .header_image img{ 
@@ -192,6 +210,11 @@
     .header_lists .header_list-1{
       gap: 3.3rem;
     }
+
+    .header_list-2 li{
+      width: 17%;
+    }
+    
   }
 
   @media only screen and (min-width: 83.5rem){

@@ -1,16 +1,16 @@
-.education{
+.education {
   margin-top: 15%;
   padding-top: 15%;
   border-top: 1px solid gray;
 }
 
-.education h1{
+.education h1 {
   font-size: 1.6rem;
   word-spacing: 1.3px;
   text-align: center;
 }
 
-.education_div{
+.education_div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,18 +18,18 @@
   margin-top: 15%;
 }
 
-.education_image{
+.education_image {
   width: 50%;
   display: none;
 }
 
-.education_image img{
+.education_image img {
   width: 100%;
   height: 350px;
   border: none;
 }
 
-.education_detail{
+.education_detail {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,7 +42,7 @@
   padding-top: 2.5rem;
 }
 
-.logo{
+.logo {
   width: 30%;
   position: absolute;
   top: -15%;
@@ -51,12 +51,11 @@
   padding: 0 1rem 0 1rem;
 }
 
-.logo img{
-  width: 100%; 
-  
+.logo img {
+  width: 100%;
 }
 
-.education ul{
+.education ul {
   font-size: 1.2rem;
   line-height: 1.75rem;
   letter-spacing: 0.3px;
@@ -67,67 +66,67 @@
   gap: 1.5rem;
 }
 
-.education_detail ul li{
+.education_detail ul li {
   list-style: none;
 }
 
-@media only screen and (min-width: 23.43rem){
-  .logo{
+@media only screen and (min-width: 23.43rem) {
+  .logo {
     width: 27%;
     top: -13%;
   }
 }
 
-@media only screen and (min-width: 25.62rem){
-  .logo{
+@media only screen and (min-width: 25.62rem) {
+  .logo {
     width: 25%;
     top: -15%;
   }
 }
 
-@media only screen and (min-width: 28.75rem){
-  .logo{
+@media only screen and (min-width: 28.75rem) {
+  .logo {
     width: 23%;
     top: -18%;
   }
 }
 
-@media only screen and (min-width: 31.5rem){
-  .logo{
+@media only screen and (min-width: 31.5rem) {
+  .logo {
     top: -21%;
     width: 22%;
   }
 }
 
-@media only screen and (min-width: 34.62rem){
-  .logo{
+@media only screen and (min-width: 34.62rem) {
+  .logo {
     top: -25%;
     width: 20%;
   }
 }
 
-@media only screen and (min-width: 37.5rem){
-  .education{
+@media only screen and (min-width: 37.5rem) {
+  .education {
     margin-top: 10%;
     padding-top: 10%;
   }
 
-  .education h1{
+  .education h1 {
     font-size: 2rem;
     word-spacing: 2px;
     letter-spacing: 1.3px;
     text-shadow: 1px 1.8px 5px rgb(0, 0, 0);
   }
 
-  .education_div{
+  .education_div {
     margin-top: 10%;
   }
 
-  .education_detail{
+  .education_detail {
     padding-top: 2.8rem;
   }
 
-  .education ul{
+  .education ul {
     font-size: 1.3rem;
     line-height: 1.8rem;
     letter-spacing: 0.3px;
@@ -135,98 +134,92 @@
   }
 }
 
-@media only screen and (min-width: 48rem){
-  .education{
+@media only screen and (min-width: 48rem) {
+  .education {
     padding-inline: 3%;
   }
 
-  .education_div{
+  .education_div {
     margin-top: 3%;
   }
 
-  .education_image{
+  .education_image {
     display: block;
     width: 40%;
   }
 
-  .logo{
+  .logo {
     width: 22%;
     top: -2rem;
   }
 
-  .education_image img{
-    filter: drop-shadow(0 0 8rem  black);
+  .education_image img {
+    filter: drop-shadow(0 0 8rem black);
   }
 }
-@media only screen and (min-width: 56.68rem){
-  .logo{
+@media only screen and (min-width: 56.68rem) {
+  .logo {
     width: 20%;
     top: -2.5rem;
   }
 }
 
-
-
-@media only screen and (min-width: 64rem){
-  .education{
+@media only screen and (min-width: 64rem) {
+  .education {
     margin-top: 5%;
     padding-top: 5%;
   }
 
-  .education h1{
+  .education h1 {
     font-size: 2.3rem;
   }
 
-  .education_div{
+  .education_div {
     gap: 3rem;
     margin-top: 0%;
   }
 
-  .education_image{
+  .education_image {
     width: 25%;
   }
 }
 
-@media only screen and (min-width: 75rem){
-  .education{
+@media only screen and (min-width: 75rem) {
+  .education {
     padding-inline: 5%;
   }
 
-  .education_div{
+  .education_div {
     gap: 5rem;
-    /* margin-top: 0%; */
   }
 
-  .education_image{
+  .education_image {
     width: 22%;
   }
-
 }
 
-@media only screen and (min-width: 87.5rem){
-  .education{
+@media only screen and (min-width: 87.5rem) {
+  .education {
     padding-inline: 10%;
   }
 
-  .education h1{
+  .education h1 {
     font-size: 2.9rem;
   }
 
-  .logo{
+  .logo {
     width: 15%;
-    /* top: -3rem; */
   }
 
-  .education ul{
+  .education ul {
     font-size: 1.6rem;
     line-height: 2.1rem;
   }
 }
 
-@media only screen and (min-width: 106.25rem){
-  .education ul{
+@media only screen and (min-width: 106.25rem) {
+  .education ul {
     font-size: 1.7rem;
     line-height: 2.5rem;
   }
 }
-

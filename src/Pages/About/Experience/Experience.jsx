@@ -3,7 +3,19 @@ import Skills from '../../../assets/Skills.png';
 import SSITC from '../../../assets/SSITC.png';
 import './Experience.css';
 
-function Experience({heading, para1, para2, para3, image, logo, list1 , list2, list3, btn, altImage}) {
+function Experience({
+  heading,
+  para1,
+  para2,
+  para3,
+  image,
+  logo,
+  list1,
+  list2,
+  list3,
+  btn,
+  altImage,
+}) {
   return (
     <>
       <section className="experience">
@@ -31,19 +43,10 @@ function Experience({heading, para1, para2, para3, image, logo, list1 , list2, l
             </div>
             <div className="experience_list">
               <ul>
-                <li>
-                  {list1}
-                </li>
-                <li>
-                  {list2}
-                </li>
-                <li>
-                  {list3}
-                </li>
+                <li>{list1}</li>
+                <li>{list2}</li>
+                <li>{list3}</li>
               </ul>
-            </div>
-            <div className="experience_button">
-              <button>{btn}</button>
             </div>
           </div>
         </div>

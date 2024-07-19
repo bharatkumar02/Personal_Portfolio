@@ -1,21 +1,19 @@
 import React from 'react';
-import styles from './ProjectDetail.module.css';
+import styles from './MyProject.module.css';
 
-function ProjectDetail({
-  mainHeading,
-  projectName,
+function MyProject({
   projectDetail,
-  technology,
-  linkUsed,
+  mainHeading,
   myStyle,
+  projecrDetail_image,
+  linkUsed,
+  projectName,
+  technology,
+  gitLink,
 }) {
   return (
     <>
       <section className={styles.projectDetail}>
-        <div className={styles.projectDetail_heading}>
-          <h1>{mainHeading}</h1>
-        </div>
-
         <div className={myStyle}>
           <div className={styles.projectDetail_image}>
             <iframe src={linkUsed} title="Laundry Website"></iframe>
@@ -27,10 +25,14 @@ function ProjectDetail({
             <p>
               <strong>Technologies Used :-</strong> <i>{technology}</i>
             </p>
-
-            <a href={linkUsed} target="_blank">
-              Preview
-            </a>
+            <div className={styles.projectDetail_Button}>
+              <a href={linkUsed} target="_blank">
+                Preview
+              </a>
+              <a href={gitLink} target="_blank">
+                View Code
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -38,4 +40,4 @@ function ProjectDetail({
   );
 }
 
-export default ProjectDetail;
+export default MyProject;
