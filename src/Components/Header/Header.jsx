@@ -25,7 +25,7 @@ function Header() {
     <header className={`header ${section1InView ? 'in-view' : ''}`} ref={section1Ref}>
       <nav className="header_nav">
         <div className="header_image">
-          <Link to='/' smooth={true} duration={200}>
+          <Link to='/'>
           <img src={Logo} alt="Logo" />
           </Link>
         </div>

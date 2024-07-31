@@ -49,7 +49,7 @@ function Home() {
           mainHeading={'Current Project'}
           projectName={'Laundry Service'}
           projectDetail={`Introducing a sleek and user-friendly laundry service website designed from scratch with HTML and Tailwind CSS. This project showcases my ability to create elegant, responsive web interfaces that enhance user experience and streamline service accessibility. Explore how I integrated intuitive design with efficient functionality to redefine the online laundry experience.`}
-          linkUsed={'https://laudry-tau.vercel.app/index.html'}
+          linkUsed={'https://laundry-service-seven.vercel.app/index.html'}
           technology={'Html, Css, and Javascript.'}
           myStyle={styles.projectDetail_div}
           className={`${styles.projectDetail} ${section2InView ? `${styles.inView}` : ``}`} refer={section2Ref}
