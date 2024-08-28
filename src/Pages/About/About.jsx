@@ -39,7 +39,7 @@ function About() {
         logo={SSITC}
         para1={'Front-end Developer Intern'}
         para2={'SSITC Solution Pvt. Ltd.'}
-        para3={'February 1, 2024 - OnGoing'}
+        para3={'February 1, 2024 - July 31, 2024'}
         list1="&#10148; Developed responsive web applications using HTML, CSS, Tailwind CSS, React.js, and JavaScript."
         list2="&#10148; Improved page load times by 30% and enhanced user engagement by
                   20%."
